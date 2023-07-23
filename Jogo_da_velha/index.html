@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="Pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Jogo da Velha</title>
+    
+</head>
+<body>
+    <!--Identidade dos jogadores-->
+        <div class="z-1 w-100 h-100 m-0 p-0 background position-absolute sobre">
+                <div class="col-10 shadow-lg col-sm-5 col-lg-3 px-2 mx-auto py-5 d-flex flex-column align-items-center rounded-2 bg form" style="min-height:350px;">
+                    <h2 class="mb-4 h3 bold text-light">Jogo da Velha</h2>
+                    <input type="text" name="" id="player1" class="rounded-1 py-2 px-3 border-0 col-11 my-2" maxlength="12" placeholder="Jogador 1 (X)">
+                    <input type="text" name="" id="player2" class="rounded-2 py-2 px-3 border-0 col-11 my-2" maxlength="12"  placeholder="Jogador 2 (O)">
+                    <input type="button" class="btn bg-personal text-light col-11 my-3 bold" id="saveName" value="Jogar">
+                </div>
+        </div>
+
+
+        <!--Game over-->
+        <div class="z-1 w-100 h-100 m-0 p-0 background position-absolute sobre none">
+            <div class="col-10 col-sm-5 col-lg-3 px-1 mx-auto py-5 d-flex flex-column align-items-center rounded-2 bg form" style="min-height:220px;">
+                <h2 class="mb-4 h3 text-light bold">Fim de jogo</h2>
+                <h3 class="mb-4 h2 bold text-light vencedor"> venceu</h3>
+                <input type="button" class="btn bg-personal text-light col-11 my-3 bold" id="newGame" value="Novo jogo">
+            </div>
+    </div>
+
+    <!--O jogo da velha-->
+        <div class="placard col-12 col-sm-6 bg-secondary table-responsive-sm">
+            <table class="table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Vez | Jogador</th>
+                        <th scope="col">Vitórias</th>
+                        <th scope="col">Empates</th>
+                        <th scope="col">Derrotas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="nome shadow-lg" scope="row"><i class="jogada fa fa-times text-primary"></i> </th>
+                        <td class="vitorias">0</td>
+                        <td class="empates">0</td>
+                        <td class="derrotas">0</td>
+                    </tr>
+                    <tr>
+                        <th class="nome shadow-lg" scope="row"><i class="jogada fa fa-circle-notch green "></i> </th>
+                        <td class="vitorias">0</td>
+                        <td class="empates">0</td>
+                        <td class="derrotas">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="game col-12 col-md-10">
+        <h1 class="d-block text-light h3 bold">Jogo da Velha</h1>
+        <div class="row mx-auto stage shadow-sm g-1 rounded-2  d-inline-block p-3">
+            <div class="col-12 ">
+                <div class="square" id="0"></div>
+                <div class="square" id="1"></div>
+                <div class="square" id="2"></div>
+            </div>
+            <div>
+                <div class="square" id="3"></div>
+                <div class="square" id="4"></div>
+                <div class="square" id="5"></div>
+            </div>
+            <div>
+                <div class="square" id="6"></div>
+                <div class="square" id="7"></div>
+                <div class="square" id="8"></div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden m-0 p-0 centro col-12">
+        <img id="imagemDefault" src="img/IMG-20230720-WA0020.jpg" alt="" class="imagem  centro">
+        <div class="sub"></div>
+    </div>
+    <audio src="" class="music hidden" loop controls></audio>
+    <audio src="" class="music hidden" loop controls></audio>
+    <audio src="" class="music hidden" loop controls></audio>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/game.js"></script>
+        <script src="js/interface.js"></script>
+</body>
+</html>
