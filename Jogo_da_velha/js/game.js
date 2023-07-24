@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     }
     for (let i = 0; i < song.length; i++) {
             song[i].setAttribute("src","music/"+sound[atual]+media[i]);
-            song[i].volume=0.5;
+            song[i].volume=0.4;
     }
     });
 //Trocar imagens
