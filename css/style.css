@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf");
+}
+*{
+    font-family: "Nunito";
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
