@@ -30,7 +30,7 @@ let vez = 1;
 
 function setVez(pos){
     let joga= document.querySelectorAll(".jogada");
-    let proprie=["jogada fa fa-times text-primary","jogada fa fa-circle-notch green"];
+    let proprie=["jogada fa fa-times text-primary","jogada fa fa-o green"];
     
     if(pos == 1){
         vez= 0;
@@ -119,7 +119,7 @@ function setVez(pos){
 let board=['','','','','','','','',''];
 let v=[];
 let playeTime= 0;
-let symbols = [" o fa fa-circle-notch"," x fa fa-times "];
+let symbols = [" o fa fa-o"," x fa fa-times "];
 let state=[[0,1,2],
     [3,4,5],
     [6,7,8],
